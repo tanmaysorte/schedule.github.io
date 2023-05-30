@@ -1,0 +1,55 @@
+/* Add your CSS styles for the feedback section here */
+.sai
+{
+    background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+
+}
+#feedback {
+	margin-top: 50px;
+	padding: 20px;
+	background-color:#F0F8FF;
+	border-radius: 5px;
+}
+
+#feedback h2 {
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+
+#feedback p {
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+
+#feedback label {
+	display: block;
+	font-size: 16px;
+	margin-bottom: 5px;
+}
+
+#feedback input[type="text"],
+#feedback input[type="email"],
+#feedback textarea {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+}
+
+#feedback textarea {
+	height: 150px;
+}
+
+#feedback button[type="submit"] {
+	background-color: #4CAF50;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+#feedback button[type="submit"]:hover {
+	background-color: #3e8e41;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Feedback</title>
+    <link rel="stylesheet" href="style2.css">
+	<link rel="stylesheet" href="style1.css">
+	<link rel="stylesheet" href="loader.css">
+
+    <script src="loader.js"></script>
+	<link rel="stylesheet" href="loader.css">
+
+	<!-- Jquery CDN Link -->
+	<script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+
+</head>
+<body class="sai">
+
+	<!-- Add your main content here -->
+
+	<div class="loader"></div>
+
+	
+	<header>
+		<div class="logo">
+			  <h1>Coding Contest Reminder</h1>
+			</div>
+			<nav>
+			  <ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="feedback.html">Feedback</a></li>
+				<!--<li><a href="aboutus.html">About Us</a></li>-->
+				<li><a href="login.html">Login</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<main>
+		<!-- Feedback section -->
+		<section id="feedback">
+			<h2>Feedback</h2>
+			<p>We value your feedback! Please let us know how we can improve our website:</p>
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name" placeholder="Enter your Name" required>
+
+				<label for="email">Enter your Email:</label>
+				<input type="email" id="email" name="email" placeholder="Enter your Email" required>
+
+				<label for="feedback2">Feedback:</label>
+				<textarea id="feedback2" name="feedback" placeholder="Enter your Feedback" required></textarea>
+
+				<button type="submit" onclick="submitForm()">Submit</button>
+		</section>
+	</main>
+
+    <footer>
+        <p>&copy; 2023 Coding Contest Reminder</p>
+    </footer>
+	
+	<script type="text/javascript">
+		
+	
+		function submitForm(){
+			let n1 = $("#name").val(); // JQUERY USED HERE
+			let e1 = document.getElementById("email").value; // JQUERY NOT USED HERE
+			let f1 = document.getElementById("feedback2").value;
+			console.log("n1 ", n1)
+
+			if(n1.length < 5){ // validations
+				alert("Name can not be less than 5 letters!");
+			}
+			else if(f1.length < 1){ // validations
+				alert("Feedback can not be less than 1 letters!");
+			}else{
+				const message = `mailto:chaintanyaraghuvanshi88@gmail.com?Subject=Chaitanya%20You've%20got%20message%20from%20${n1}%20&Email=$	{e1}&Body=${f1}`
+	
+				window.location.assign(message);
+			}
+		}
+	</script>
+	
+</body>
+</html>

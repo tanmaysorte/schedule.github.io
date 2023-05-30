@@ -1,0 +1,234 @@
+/* General styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-image: linear-gradient(#EA8D8D,#A890FE);
+    color: #fff;
+  }
+  
+  .logo {
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    margin: 0 10px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Main content */
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .banner {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .banner h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .banner p {
+    font-size: 18px;
+    margin-bottom: 0;
+  }
+  
+  .contests {
+    margin-bottom: 50px;
+  }
+  
+  .contests h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .contests ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .contests li {
+    width: 33.33%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .contest-image {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .contest-image img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .contest-details {
+    background-image: linear-gradient(#A9F1DF, #FFBBBB);
+    padding: 20px;
+  }
+  
+  .contest-details h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .contest-details p {
+    margin: 0;
+  }
+  
+  .contest-details a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Footer */
+  footer {
+    background-image: linear-gradient(#EA8D8D,#A890FE);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+
+  /*Extra added Code for animations*/
+
+  /* Fade-in animation */
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Apply animation to elements */
+.banner, .contests {
+  animation: fade-in 1s ease;
+}
+
+/* Scale-up animation */
+@keyframes scale-up {
+  from { transform: scale(1); }
+  to { transform: scale(1.1); }
+}
+
+/* Apply animation to elements on hover */
+.contest-details a:hover {
+  animation: scale-up 0.2s ease-in-out;
+}
+
+/* Spin animation */
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Apply animation to elements on click */
+.contest-details a:active {
+  animation: spin 1s linear;
+}
+
+
+/* Animations */
+
+/* Fade in */
+.fade-in {
+  animation: fadeIn 1s ease-in;
+  }
+  
+  @keyframes fadeIn {
+  from {
+  opacity: 0;
+  }
+  to {
+  opacity: 1;
+  }
+  }
+  
+  /* Zoom in */
+  .zoom-in {
+  animation: zoomIn 1s ease-in;
+  }
+  
+  @keyframes zoomIn {
+  from {
+  transform: scale(0);
+  }
+  to {
+  transform: scale(1);
+  }
+  }
+  
+  /* Slide in from left */
+  .slide-in-left {
+  animation: slideInLeft 1s ease-in;
+  }
+  
+  @keyframes slideInLeft {
+  from {
+  transform: translateX(-100%);
+  }
+  to {
+  transform: translateX(0);
+  }
+  }
+  
+  /* Slide in from right */
+  .slide-in-right {
+  animation: slideInRight 1s ease-in;
+  }
+  
+  @keyframes slideInRight {
+  from {
+  transform: translateX(100%);
+  }
+  to {
+  transform: translateX(0);
+  }
+  }
+  
+  /* Rotate */
+  .rotate {
+  animation: rotate 1s ease-in;
+  }
+  
+  @keyframes rotate {
+  from {
+  transform: rotate(0);
+  }
+  to {
+  transform: rotate(360deg);
+  }
+  }
